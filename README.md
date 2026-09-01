@@ -1,8 +1,6 @@
+<img src="img/banner.jpg" alt="Ray McLung Gunawan — Computer Science, Binus · Bandung" width="100%">
+
 <div align="center">
-
-# Ray McLung Gunawan
-
-Mahasiswa Computer Science, Binus (lulus 2029) &nbsp;·&nbsp; developer paruh waktu &nbsp;·&nbsp; Bandung
 
 [Situs](https://raymclung.github.io) &nbsp;·&nbsp;
 [LinkedIn](https://www.linkedin.com/in/raymclunggunawan/) &nbsp;·&nbsp;
