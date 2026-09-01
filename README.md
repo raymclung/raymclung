@@ -21,21 +21,56 @@ belajar C dan Python.
 
 <br>
 
-## RubyRa Stays
+## wa-bot-grup-catur
 
-<a href="https://raymclung.github.io/RubyRa/">
-  <img src="img/rubyra.jpg" alt="Halaman utama RubyRa Stays" width="100%">
+Bot moderasi grup WhatsApp untuk komunitas catur. Berjalan sejak Juni 2026.
+
+```
+WhatsApp ⇄ gateway (Node.js) ──POST /incoming──▶ brain (C# .NET 10)
+                  ▲                                      │
+                  └──── POST /delete , POST /send ◀───────┘
+```
+
+<sub>[Kode](https://github.com/raymclung/wa-bot-grup-catur) &nbsp;·&nbsp; C#, .NET 10, Node.js, Baileys</sub>
+
+Gateway hanya mengurus koneksi; seluruh logika moderasi ada di brain. Dengan begitu aturannya
+bisa diuji tanpa perlu terhubung ke WhatsApp sama sekali.
+
+Yang paling banyak mengajari saya justru bukan kodenya, melainkan WhatsApp itu sendiri. Bot
+ini pernah kena blokir 403 karena mengirim terlalu banyak pesan, jadi saya tambahkan batas 50
+pesan per jam, ubah jawaban puzzle dari gambar papan menjadi teks, dan buat jeda sambung-ulang
+yang makin lama makin panjang. Ada juga mode "capek" dan jam tenang pukul 1–5 pagi.
+
+<br>
+
+## PGN to Puzzle
+
+<a href="https://github.com/raymclung/PGN-to-puzzles-Chess">
+  <img src="img/analyzer.jpg" alt="Papan analisa PGN to Puzzle" width="100%">
 </a>
 
-<sub>[Coba demonya](https://raymclung.github.io/RubyRa/) &nbsp;·&nbsp; [Kode](https://github.com/raymclung/RubyRa) &nbsp;·&nbsp; JavaScript, CSS</sub>
+```
+$ python pgn_to_puzzles.py sample12.pgn --depth 10 -o puzzles.json
 
-Prototipe pemesanan penginapan. Tiga belas layar dan 53 fungsi JavaScript, seluruhnya dalam
-satu berkas HTML tanpa dependensi.
+  [  3] L5  ply 42  c7c5 -> Qxh6 Rf7 Rxg7+ Rxg7 Bc4+ d5 Rxd5 Qxd5 Bxd5+ Kf8
+  [  5] L4  ply 59  d6g6 -> Bxc2+ Ke3 Bd4#
+  [  6] L3  ply 23  g5e4 -> Nxe4 Nxe4 Qxe4 c3
+  ...
+  Wrote 16 puzzles -> puzzles.json
+```
 
-Versi pertamanya berukuran **31,6 MB** karena semua gambar saya tanam sebagai base64 — satu
-barisnya saja 25 MB, dan GitHub menolaknya saat diunggah. Setelah gambarnya dikeluarkan jadi
-berkas terpisah lalu dikompres, tinggal 2,7 MB. Ternyata dari 37 gambar yang tertanam, cuma
-19 yang benar-benar berbeda.
+<sub>[Kode](https://github.com/raymclung/PGN-to-puzzles-Chess) &nbsp;·&nbsp; Python, Stockfish</sub>
+
+Membaca partai catur, mencari langkah yang mengubah posisi seimbang menjadi kalah, lalu
+menjadikannya puzzle. Mendeteksi 26 tema taktis — termasuk pola mat bernama seperti
+*smothered* dan *Anastasia* — semuanya ditulis dari nol tanpa pustaka tambahan.
+
+Bagian yang paling lama saya pikirkan adalah cara menentukan tingkat kesulitan. Awalnya saya
+pakai panjang solusi, tapi itu keliru: rangkaian panjang berisi langkah gamblang tetap mudah,
+sementara satu langkah tenang yang brilian tetap sulit.
+
+Ada juga papan analisa berbasis web untuk menelaah satu partai langkah demi langkah, dengan
+evaluasi mesin di tiap posisi.
 
 <br>
 
@@ -64,6 +99,24 @@ mempertahankan bentuk data lama, sehingga 2.000 baris kode di bawahnya tidak per
 
 <br>
 
+## RubyRa Stays
+
+<a href="https://raymclung.github.io/RubyRa/">
+  <img src="img/rubyra.jpg" alt="Halaman utama RubyRa Stays" width="100%">
+</a>
+
+<sub>[Coba demonya](https://raymclung.github.io/RubyRa/) &nbsp;·&nbsp; [Kode](https://github.com/raymclung/RubyRa) &nbsp;·&nbsp; JavaScript, CSS</sub>
+
+Prototipe pemesanan penginapan. Tiga belas layar dan 53 fungsi JavaScript, seluruhnya dalam
+satu berkas HTML tanpa dependensi.
+
+Versi pertamanya berukuran **31,6 MB** karena semua gambar saya tanam sebagai base64 — satu
+barisnya saja 25 MB, dan GitHub menolaknya saat diunggah. Setelah gambarnya dikeluarkan jadi
+berkas terpisah lalu dikompres, tinggal 2,7 MB. Ternyata dari 37 gambar yang tertanam, cuma
+19 yang benar-benar berbeda.
+
+<br>
+
 ## PesanAja
 
 <a href="https://raymclung.github.io/Pesan-Aja/">
@@ -78,52 +131,6 @@ sebagai PWA lewat service worker.
 
 Ini tugas kuliah. Masih ada CSS yang tercecer di beberapa halaman yang belum sempat saya
 rapikan.
-
-<br>
-
-## wa-bot-grup-catur
-
-Bot moderasi grup WhatsApp untuk komunitas catur. Berjalan sejak Juni 2026.
-
-```
-WhatsApp ⇄ gateway (Node.js) ──POST /incoming──▶ brain (C# .NET 10)
-                  ▲                                      │
-                  └──── POST /delete , POST /send ◀───────┘
-```
-
-<sub>[Kode](https://github.com/raymclung/wa-bot-grup-catur) &nbsp;·&nbsp; C#, .NET 10, Node.js, Baileys</sub>
-
-Gateway hanya mengurus koneksi; seluruh logika moderasi ada di brain. Dengan begitu aturannya
-bisa diuji tanpa perlu terhubung ke WhatsApp sama sekali.
-
-Yang paling banyak mengajari saya justru bukan kodenya, melainkan WhatsApp itu sendiri. Bot
-ini pernah kena blokir 403 karena mengirim terlalu banyak pesan, jadi saya tambahkan batas 50
-pesan per jam, ubah jawaban puzzle dari gambar papan menjadi teks, dan buat jeda sambung-ulang
-yang makin lama makin panjang. Ada juga mode "capek" dan jam tenang pukul 1–5 pagi.
-
-<br>
-
-## PGN to Puzzle
-
-```
-$ python pgn_to_puzzles.py sample12.pgn --depth 10 -o puzzles.json
-
-  [  3] L5  ply 42  c7c5 -> Qxh6 Rf7 Rxg7+ Rxg7 Bc4+ d5 Rxd5 Qxd5 Bxd5+ Kf8
-  [  5] L4  ply 59  d6g6 -> Bxc2+ Ke3 Bd4#
-  [  6] L3  ply 23  g5e4 -> Nxe4 Nxe4 Qxe4 c3
-  ...
-  Wrote 16 puzzles -> puzzles.json
-```
-
-<sub>[Kode](https://github.com/raymclung/PGN-to-puzzles-Chess) &nbsp;·&nbsp; Python, Stockfish</sub>
-
-Membaca partai catur, mencari langkah yang mengubah posisi seimbang menjadi kalah, lalu
-menjadikannya puzzle. Mendeteksi 26 tema taktis — termasuk pola mat bernama seperti
-*smothered* dan *Anastasia* — semuanya ditulis dari nol tanpa pustaka tambahan.
-
-Bagian yang paling lama saya pikirkan adalah cara menentukan tingkat kesulitan. Awalnya saya
-pakai panjang solusi, tapi itu keliru: rangkaian panjang berisi langkah gamblang tetap mudah,
-sementara satu langkah tenang yang brilian tetap sulit.
 
 <br>
 
