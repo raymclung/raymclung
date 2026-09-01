@@ -1,15 +1,24 @@
-<img src="img/banner.jpg" alt="Ray McLung Gunawan — Computer Science, Binus · Bandung" width="100%">
+<img src="img/banner.jpg" alt="Ray McLung Gunawan · Computer Science, Binus · Bandung" width="100%">
 
 <div align="center">
-  <a href="https://raymclung.github.io"><img src="img/btn-situs.png" alt="Situs Portofolio" width="184"></a>
-  <a href="https://www.linkedin.com/in/raymclunggunawan/"><img src="img/btn-linkedin.png" alt="LinkedIn" width="184"></a>
-  <a href="mailto:raymclung@gmail.com"><img src="img/btn-email.png" alt="Email" width="184"></a>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=900&color=E8B84B&center=true&vCenter=true&width=560&lines=Bangun+dulu%2C+baru+pakai+framework.;Catur+jadi+pintu+masuk+ke+coding.;Kalau+ragu%2C+ukur+dulu." alt="Typing SVG">
+
+<a href="https://raymclung.github.io"><img src="img/btn-situs.png" alt="Situs Portofolio" width="184"></a>
+<a href="https://www.linkedin.com/in/raymclunggunawan/"><img src="img/btn-linkedin.png" alt="LinkedIn" width="184"></a>
+<a href="mailto:raymclung@gmail.com"><img src="img/btn-email.png" alt="Email" width="184"></a>
+
 </div>
 
 <br>
 
-Hampir semua yang saya bangun berhubungan dengan catur — bukan karena direncanakan, tapi
-karena dari sanalah tugas-tugas pertama saya datang.
+## 👋 Halo
+
+Saya mahasiswa Computer Science di Binus, Bandung, sekaligus developer paruh waktu.
+
+Hampir semua yang saya bangun berhubungan dengan catur. Bukan karena direncanakan, tapi
+karena dari sanalah tugas-tugas pertama saya datang: bot moderasi grup, pembangkit puzzle,
+penulis artikel. Lama-lama jadi kebiasaan.
 
 Saya cenderung memulai tanpa framework. Bukan karena anti, tapi karena ingin tahu dulu apa
 yang sebenarnya terjadi sebelum menyerahkannya ke pustaka orang lain. Belakangan sedang
@@ -17,7 +26,21 @@ belajar C dan Python.
 
 <br>
 
-## wa-bot-grup-catur
+## 🧰 Yang saya pakai
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=cs,dotnet,python,js,html,css,c&theme=dark" alt="Bahasa">
+
+<img src="https://skillicons.dev/icons?i=nodejs,git,github,vscode,visualstudio,sqlite&theme=dark" alt="Perkakas">
+
+</div>
+
+<br>
+
+## 📌 Yang saya kerjakan
+
+## 🤖 wa-bot-grup-catur
 
 Bot moderasi grup WhatsApp untuk komunitas catur. Berjalan sejak Juni 2026.
 
@@ -39,7 +62,7 @@ yang makin lama makin panjang. Ada juga mode "capek" dan jam tenang pukul 1–5 
 
 <br>
 
-## PGN to Puzzle
+## ♟️ PGN to Puzzle
 
 <a href="https://github.com/raymclung/PGN-to-puzzles-Chess">
   <img src="img/analyzer.jpg" alt="Papan analisa PGN to Puzzle" width="100%">
@@ -58,8 +81,8 @@ $ python pgn_to_puzzles.py sample12.pgn --depth 10 -o puzzles.json
 <sub>[Kode](https://github.com/raymclung/PGN-to-puzzles-Chess) &nbsp;·&nbsp; Python, Stockfish</sub>
 
 Membaca partai catur, mencari langkah yang mengubah posisi seimbang menjadi kalah, lalu
-menjadikannya puzzle. Mendeteksi 26 tema taktis — termasuk pola mat bernama seperti
-*smothered* dan *Anastasia* — semuanya ditulis dari nol tanpa pustaka tambahan.
+menjadikannya puzzle. Ada 26 tema taktis yang dikenali, termasuk pola mat bernama seperti
+*smothered* dan *Anastasia*. Semuanya ditulis dari nol tanpa pustaka tambahan.
 
 Bagian yang paling lama saya pikirkan adalah cara menentukan tingkat kesulitan. Awalnya saya
 pakai panjang solusi, tapi itu keliru: rangkaian panjang berisi langkah gamblang tetap mudah,
@@ -70,7 +93,7 @@ evaluasi mesin di tiap posisi.
 
 <br>
 
-## PGN to Article
+## 📝 PGN to Article
 
 ```
 $ pgn-to-article partai.pgn --lang id -o artikel.md
@@ -86,7 +109,7 @@ $ pgn-to-article partai.pgn --lang id -o artikel.md
 
 Membaca satu partai, menandai momen kritisnya dengan Stockfish, lalu menuliskannya jadi
 artikel. Bagian yang menentukan ada di penyusun prompt: ia tidak menempelkan notasi partai
-begitu saja, tapi merangkai konteks — siapa pemainnya, pembukaan apa, di langkah mana posisi
+begitu saja, tapi merangkai konteks: siapa pemainnya, pembukaan apa, di langkah mana posisi
 berubah, dan seberapa besar perubahannya menurut mesin.
 
 Alat ini saya pisahkan dari sistem yang lebih besar, sekaligus dipindahkan dari .NET Framework
@@ -95,7 +118,7 @@ mempertahankan bentuk data lama, sehingga 2.000 baris kode di bawahnya tidak per
 
 <br>
 
-## RubyRa Stays
+## 🏨 RubyRa Stays
 
 <a href="https://raymclung.github.io/RubyRa/">
   <img src="img/rubyra.jpg" alt="Halaman utama RubyRa Stays" width="100%">
@@ -103,17 +126,17 @@ mempertahankan bentuk data lama, sehingga 2.000 baris kode di bawahnya tidak per
 
 <sub>[Coba demonya](https://raymclung.github.io/RubyRa/) &nbsp;·&nbsp; [Kode](https://github.com/raymclung/RubyRa) &nbsp;·&nbsp; JavaScript, CSS</sub>
 
-Tugas kuliah. Prototipe pemesanan penginapan — tiga belas layar dan 53 fungsi JavaScript,
+Tugas kuliah. Prototipe pemesanan penginapan dengan tiga belas layar dan 53 fungsi JavaScript,
 seluruhnya dalam satu berkas HTML tanpa dependensi.
 
-Versi pertamanya berukuran **31,6 MB** karena semua gambar saya tanam sebagai base64 — satu
+Versi pertamanya berukuran **31,6 MB** karena semua gambar saya tanam sebagai base64. Satu
 barisnya saja 25 MB, dan GitHub menolaknya saat diunggah. Setelah gambarnya dikeluarkan jadi
 berkas terpisah lalu dikompres, tinggal 2,7 MB. Ternyata dari 37 gambar yang tertanam, cuma
 19 yang benar-benar berbeda.
 
 <br>
 
-## PesanAja
+## 📅 PesanAja
 
 <a href="https://raymclung.github.io/Pesan-Aja/">
   <img src="img/pesanaja.jpg" alt="Halaman utama PesanAja" width="100%">
@@ -121,12 +144,12 @@ berkas terpisah lalu dikompres, tinggal 2,7 MB. Ternyata dari 37 gambar yang ter
 
 <sub>[Coba demonya](https://raymclung.github.io/Pesan-Aja/) &nbsp;·&nbsp; [Kode](https://github.com/raymclung/Pesan-Aja) &nbsp;·&nbsp; JavaScript, PWA</sub>
 
-Tugas kuliah juga. Prototipe pemesanan layanan — salon, spa, laundry, barbershop. Dua puluh
-halaman yang saling terhubung, mobile-first dengan tata letak desktop tersendiri, dan bisa
-dipasang sebagai PWA lewat service worker.
+Tugas kuliah juga. Prototipe pemesanan layanan seperti salon, spa, laundry, dan barbershop.
+Dua puluh halaman yang saling terhubung, mobile-first dengan tata letak desktop tersendiri,
+dan bisa dipasang sebagai PWA lewat service worker.
 
 Tiap halaman punya blok `<style>` sendiri, dan lama saya kira itu banyak pengulangan.
-Setelah diukur ternyata cuma 2% yang benar-benar duplikat — sisanya memang khusus per
+Setelah diukur ternyata cuma 2% yang benar-benar duplikat. Sisanya memang khusus per
 halaman. Yang akhirnya saya satukan hanya 37 token desain ke satu berkas.
 
 <br>
@@ -135,8 +158,16 @@ halaman. Yang akhirnya saya satukan hanya 37 token desain ke satu berkas.
 
 <div align="center">
 
-**JavaScript · HTML · CSS · Python · C# · C · Git**
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=raymclung&theme=dark&hide_border=true&background=0A0C10&stroke=232B38&ring=E8B84B&fire=E8B84B&currStreakLabel=B7C2D0&sideLabels=B7C2D0&dates=7E8B9C" alt="Streak kontribusi">
 
-<sub>Terbuka untuk magang dan proyek lepas.</sub>
+<br><br>
+
+**Terbuka untuk magang dan proyek lepas.**
+
+<sub>Sapa saja lewat <a href="https://www.linkedin.com/in/raymclunggunawan/">LinkedIn</a> atau <a href="mailto:raymclung@gmail.com">email</a>.</sub>
+
+<br>
+
+<img src="https://komarev.com/ghpvc/?username=raymclung&label=Dilihat&color=E8B84B&style=flat" alt="Jumlah kunjungan">
 
 </div>
