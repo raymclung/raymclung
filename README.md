@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=900&color=E8B84B&center=true&vCenter=true&width=560&lines=Bangun+dulu%2C+baru+pakai+framework.;Catur+jadi+pintu+masuk+ke+coding.;Kalau+ragu%2C+ukur+dulu." alt="Typing SVG">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains%20Mono&weight=600&size=20&duration=3000&pause=1000&color=E8B84B&center=true&vCenter=true&width=504&height=45&lines=Mahasiswa%20CS%20di%20Binus%2C%20Bandung.%3BBot%20WhatsApp%3A%2016.211%20baris%20C%23.%3BPGN%20masuk%2C%20puzzle%20dan%20artikel%20keluar.%3B26%20tema%20taktis%2C%20ditulis%20dari%20nol." alt="Mahasiswa CS di Binus, Bandung">
 
 <a href="https://raymclung.github.io"><img src="img/btn-situs.png" alt="Situs Portofolio" width="184"></a>
 <a href="https://www.linkedin.com/in/raymclunggunawan/"><img src="img/btn-linkedin.png" alt="LinkedIn" width="184"></a>
