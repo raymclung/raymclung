@@ -39,6 +39,31 @@ berkas terpisah lalu dikompres, tinggal 2,7 MB. Ternyata dari 37 gambar yang ter
 
 <br>
 
+## PGN to Article
+
+```
+$ pgn-to-article partai.pgn --lang id -o artikel.md
+
+  [1/4] Parsed 153 half-moves
+  [2/4] Running engine analysis...
+  [3/4] Prompt built — 2,121 characters
+  [4/4] Asking ollama...
+        done — 1,708 characters written
+```
+
+<sub>[Kode](https://github.com/raymclung/PGN-to-article) &nbsp;·&nbsp; C#, .NET 10, Stockfish</sub>
+
+Membaca satu partai, menandai momen kritisnya dengan Stockfish, lalu menuliskannya jadi
+artikel. Bagian yang menentukan ada di penyusun prompt: ia tidak menempelkan notasi partai
+begitu saja, tapi merangkai konteks — siapa pemainnya, pembukaan apa, di langkah mana posisi
+berubah, dan seberapa besar perubahannya menurut mesin.
+
+Alat ini saya pisahkan dari sistem yang lebih besar, sekaligus dipindahkan dari .NET Framework
+ke .NET 10. `JavaScriptSerializer` diganti `System.Text.Json` lewat lapisan kompatibilitas yang
+mempertahankan bentuk data lama, sehingga 2.000 baris kode di bawahnya tidak perlu disentuh.
+
+<br>
+
 ## PesanAja
 
 <a href="https://raymclung.github.io/Pesan-Aja/">
