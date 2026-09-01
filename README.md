@@ -14,12 +14,7 @@
 
 ## 👋 Halo
 
-Saya mahasiswa Computer Science di Binus, Bandung, sekaligus developer paruh waktu. Hampir
-semua yang saya bangun berhubungan dengan catur, bukan karena direncanakan, tapi karena dari
-sanalah tugas-tugas pertama saya datang: bot moderasi grup, pembangkit puzzle, penulis artikel.
-Saya cenderung memulai tanpa framework, bukan karena anti, tapi karena ingin tahu dulu apa yang
-sebenarnya terjadi sebelum menyerahkannya ke pustaka orang lain. Belakangan sedang belajar C
-dan Python.
+Saya mahasiswa Computer Science di Binus, Bandung, sekaligus developer paruh waktu. Hampir semua yang saya bangun berhubungan dengan catur, bukan karena direncanakan, tapi karena dari sanalah tugas-tugas pertama saya datang: bot moderasi grup, pembangkit puzzle, penulis artikel. Saya cenderung memulai tanpa framework, bukan karena anti, tapi karena ingin tahu dulu apa yang sebenarnya terjadi sebelum menyerahkannya ke pustaka orang lain. Belakangan sedang belajar C dan Python.
 
 <br>
 
@@ -49,15 +44,9 @@ WhatsApp ⇄ gateway (Node.js) ──POST /incoming──▶ brain (C# .NET 10)
 
 <sub>[Kode](https://github.com/raymclung/wa-bot-grup-catur) &nbsp;·&nbsp; C#, .NET 10, Node.js, Baileys</sub>
 
-Gateway hanya mengurus koneksi; seluruh logika moderasi ada di brain. Dengan begitu aturannya
-bisa diuji tanpa perlu terhubung ke WhatsApp sama sekali.
+Gateway hanya mengurus koneksi; seluruh logika moderasi ada di brain. Dengan begitu aturannya bisa diuji tanpa perlu terhubung ke WhatsApp sama sekali.
 
-Tantangan terbesarnya bukan pada logika moderasi, melainkan pada batasan WhatsApp itu
-sendiri. Setelah bot terkena pembatasan 403 akibat volume pesan yang terlalu tinggi,
-saya menerapkan tiga penanganan: batas 50 pesan per jam untuk seluruh akun, jawaban
-puzzle diubah dari gambar papan menjadi teks agar ukuran kiriman jauh lebih kecil, dan
-jeda sambung-ulang bertingkat ketika koneksi terputus. Bot juga berhenti sendiri pada
-jam tenang, pukul satu sampai lima pagi.
+Tantangan terbesarnya bukan pada logika moderasi, melainkan pada batasan WhatsApp itu sendiri. Setelah bot terkena pembatasan 403 akibat volume pesan yang terlalu tinggi, saya menerapkan tiga penanganan: batas 50 pesan per jam untuk seluruh akun, jawaban puzzle diubah dari gambar papan menjadi teks agar ukuran kiriman jauh lebih kecil, dan jeda sambung-ulang bertingkat ketika koneksi terputus. Bot juga berhenti sendiri pada jam tenang, pukul satu sampai lima pagi.
 
 <br>
 
@@ -79,16 +68,11 @@ $ python pgn_to_puzzles.py sample12.pgn --depth 10 -o puzzles.json
 
 <sub>[Kode](https://github.com/raymclung/PGN-to-puzzles-Chess) &nbsp;·&nbsp; Python, Stockfish</sub>
 
-Membaca partai catur, mencari langkah yang mengubah posisi seimbang menjadi kalah, lalu
-menjadikannya puzzle. Ada 26 tema taktis yang dikenali, termasuk pola mat bernama seperti
-*smothered* dan *Anastasia*. Semuanya ditulis dari nol tanpa pustaka tambahan.
+Membaca partai catur, mencari langkah yang mengubah posisi seimbang menjadi kalah, lalu menjadikannya puzzle. Program ini mengenali 26 pola taktik, mulai dari yang umum seperti garpu kuda dan pin, sampai enam pola skakmat yang di dunia catur punya nama sendiri. Semuanya saya tulis sendiri tanpa memakai pustaka pihak ketiga.
 
-Bagian yang paling lama saya pikirkan adalah cara menentukan tingkat kesulitan. Awalnya saya
-pakai panjang solusi, tapi itu keliru: rangkaian panjang berisi langkah gamblang tetap mudah,
-sementara satu langkah tenang yang brilian tetap sulit.
+Bagian yang paling lama saya pikirkan adalah cara menentukan tingkat kesulitan. Awalnya saya pakai panjang solusi, tapi itu keliru: rangkaian panjang berisi langkah gamblang tetap mudah, sementara satu langkah tenang yang brilian tetap sulit.
 
-Ada juga papan analisa berbasis web untuk menelaah satu partai langkah demi langkah, dengan
-evaluasi mesin di tiap posisi.
+Ada juga papan analisa berbasis web untuk menelaah satu partai langkah demi langkah, dengan evaluasi mesin di tiap posisi.
 
 <br>
 
@@ -106,14 +90,9 @@ $ pgn-to-article partai.pgn --lang id -o artikel.md
 
 <sub>[Kode](https://github.com/raymclung/PGN-to-article) &nbsp;·&nbsp; C#, .NET 10, Stockfish</sub>
 
-Membaca satu partai, menandai momen kritisnya dengan Stockfish, lalu menuliskannya jadi
-artikel. Bagian yang menentukan ada di penyusun prompt: ia tidak menempelkan notasi partai
-begitu saja, tapi merangkai konteks: siapa pemainnya, pembukaan apa, di langkah mana posisi
-berubah, dan seberapa besar perubahannya menurut mesin.
+Membaca satu partai, menandai momen kritisnya dengan Stockfish, lalu menuliskannya jadi artikel. Bagian yang menentukan ada di penyusun prompt: ia tidak menempelkan notasi partai begitu saja, tapi merangkai konteks: siapa pemainnya, pembukaan apa, di langkah mana posisi berubah, dan seberapa besar perubahannya menurut mesin.
 
-Alat ini saya pisahkan dari sistem yang lebih besar, sekaligus dipindahkan dari .NET Framework
-ke .NET 10. `JavaScriptSerializer` diganti `System.Text.Json` lewat lapisan kompatibilitas yang
-mempertahankan bentuk data lama, sehingga 2.000 baris kode di bawahnya tidak perlu disentuh.
+Alat ini saya pisahkan dari sistem yang lebih besar, sekaligus dipindahkan dari .NET Framework ke .NET 10. `JavaScriptSerializer` diganti `System.Text.Json` lewat lapisan kompatibilitas yang mempertahankan bentuk data lama, sehingga 2.000 baris kode di bawahnya tidak perlu disentuh.
 
 <br>
 
@@ -125,13 +104,9 @@ mempertahankan bentuk data lama, sehingga 2.000 baris kode di bawahnya tidak per
 
 <sub>[Coba demonya](https://raymclung.github.io/RubyRa/) &nbsp;·&nbsp; [Kode](https://github.com/raymclung/RubyRa) &nbsp;·&nbsp; JavaScript, CSS</sub>
 
-Tugas kuliah. Prototipe pemesanan penginapan dengan tiga belas layar dan 53 fungsi JavaScript,
-seluruhnya dalam satu berkas HTML tanpa dependensi.
+Tugas kuliah. Prototipe pemesanan penginapan dengan tiga belas layar dan 53 fungsi JavaScript, seluruhnya dalam satu berkas HTML tanpa dependensi.
 
-Versi pertamanya berukuran **31,6 MB** karena semua gambar saya tanam sebagai base64. Satu
-barisnya saja 25 MB, dan GitHub menolaknya saat diunggah. Setelah gambarnya dikeluarkan jadi
-berkas terpisah lalu dikompres, tinggal 2,7 MB. Ternyata dari 37 gambar yang tertanam, cuma
-19 yang benar-benar berbeda.
+Versi pertamanya berukuran **31,6 MB** karena semua gambar saya tanam sebagai base64. Satu barisnya saja 25 MB, dan GitHub menolaknya saat diunggah. Setelah gambarnya dikeluarkan jadi berkas terpisah lalu dikompres, tinggal 2,7 MB. Ternyata dari 37 gambar yang tertanam, cuma 19 yang benar-benar berbeda.
 
 <br>
 
@@ -143,13 +118,9 @@ berkas terpisah lalu dikompres, tinggal 2,7 MB. Ternyata dari 37 gambar yang ter
 
 <sub>[Coba demonya](https://raymclung.github.io/Pesan-Aja/) &nbsp;·&nbsp; [Kode](https://github.com/raymclung/Pesan-Aja) &nbsp;·&nbsp; JavaScript, PWA</sub>
 
-Tugas kuliah juga. Prototipe pemesanan layanan seperti salon, spa, laundry, dan barbershop.
-Dua puluh halaman yang saling terhubung, mobile-first dengan tata letak desktop tersendiri,
-dan bisa dipasang sebagai PWA lewat service worker.
+Tugas kuliah juga. Prototipe pemesanan layanan seperti salon, spa, laundry, dan barbershop. Dua puluh halaman yang saling terhubung, mobile-first dengan tata letak desktop tersendiri, dan bisa dipasang sebagai PWA lewat service worker.
 
-Tiap halaman punya blok `<style>` sendiri, dan lama saya kira itu banyak pengulangan.
-Setelah diukur ternyata cuma 2% yang benar-benar duplikat. Sisanya memang khusus per
-halaman. Yang akhirnya saya satukan hanya 37 token desain ke satu berkas.
+Tiap halaman punya blok `<style>` sendiri, dan lama saya kira itu banyak pengulangan. Setelah diukur ternyata cuma 2% yang benar-benar duplikat. Sisanya memang khusus per halaman. Yang akhirnya saya satukan hanya 37 token desain ke satu berkas.
 
 <br>
 
