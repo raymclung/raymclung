@@ -1,11 +1,9 @@
 <img src="img/banner.jpg" alt="Ray McLung Gunawan — Computer Science, Binus · Bandung" width="100%">
 
 <div align="center">
-
-[Situs](https://raymclung.github.io) &nbsp;·&nbsp;
-[LinkedIn](https://www.linkedin.com/in/raymclunggunawan/) &nbsp;·&nbsp;
-[raymclung@gmail.com](mailto:raymclung@gmail.com)
-
+  <a href="https://raymclung.github.io"><img src="img/btn-situs.png" alt="Situs Portofolio" width="184"></a>
+  <a href="https://www.linkedin.com/in/raymclunggunawan/"><img src="img/btn-linkedin.png" alt="LinkedIn" width="184"></a>
+  <a href="mailto:raymclung@gmail.com"><img src="img/btn-email.png" alt="Email" width="184"></a>
 </div>
 
 <br>
