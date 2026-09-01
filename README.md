@@ -1,8 +1,8 @@
 <div align="center">
 
-# Ray McLung
+# Ray McLung Gunawan
 
-Mahasiswa &nbsp;·&nbsp; developer paruh waktu &nbsp;·&nbsp; Indonesia
+Mahasiswa Computer Science, Binus &nbsp;·&nbsp; developer paruh waktu
 
 [Situs](https://raymclung.github.io) &nbsp;·&nbsp;
 [LinkedIn](https://www.linkedin.com/in/raymclunggunawan/) &nbsp;·&nbsp;
