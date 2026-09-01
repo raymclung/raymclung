@@ -32,24 +32,6 @@ Saya mahasiswa Computer Science di Binus, Bandung, sekaligus developer paruh wak
 
 ## 📌 Yang saya kerjakan
 
-## 🤖 wa-bot-grup-catur
-
-Bot moderasi grup WhatsApp untuk komunitas catur. Berjalan sejak Juni 2026.
-
-```
-WhatsApp ⇄ gateway (Node.js) ──POST /incoming──▶ brain (C# .NET 10)
-                  ▲                                      │
-                  └──── POST /delete , POST /send ◀───────┘
-```
-
-<sub>[Kode](https://github.com/raymclung/wa-bot-grup-catur) &nbsp;·&nbsp; C#, .NET 10, Node.js, Baileys</sub>
-
-Gateway hanya mengurus koneksi; seluruh logika moderasi ada di brain. Dengan begitu aturannya bisa diuji tanpa perlu terhubung ke WhatsApp sama sekali.
-
-Tantangan terbesarnya bukan pada logika moderasi, melainkan pada batasan WhatsApp itu sendiri. Setelah bot terkena pembatasan 403 akibat volume pesan yang terlalu tinggi, saya menerapkan tiga penanganan: batas 50 pesan per jam untuk seluruh akun, jawaban puzzle diubah dari gambar papan menjadi teks agar ukuran kiriman jauh lebih kecil, dan jeda sambung-ulang bertingkat ketika koneksi terputus. Bot juga berhenti sendiri pada jam tenang, pukul satu sampai lima pagi.
-
-<br>
-
 ## ♟️ PGN to Puzzle
 
 <a href="https://github.com/raymclung/PGN-to-puzzles-Chess">
@@ -76,17 +58,29 @@ Ada juga papan analisa berbasis web untuk menelaah satu partai langkah demi lang
 
 <br>
 
+## 🤖 wa-bot-grup-catur
+
+Bot moderasi grup WhatsApp untuk komunitas catur. Berjalan sejak Juni 2026.
+
+```
+WhatsApp ⇄ gateway (Node.js) ──POST /incoming──▶ brain (C# .NET 10)
+                  ▲                                      │
+                  └──── POST /delete , POST /send ◀───────┘
+```
+
+<sub>[Kode](https://github.com/raymclung/wa-bot-grup-catur) &nbsp;·&nbsp; C#, .NET 10, Node.js, Baileys</sub>
+
+Gateway hanya mengurus koneksi; seluruh logika moderasi ada di brain. Dengan begitu aturannya bisa diuji tanpa perlu terhubung ke WhatsApp sama sekali.
+
+Tantangan terbesarnya bukan pada logika moderasi, melainkan pada batasan WhatsApp itu sendiri. Setelah bot terkena pembatasan 403 akibat volume pesan yang terlalu tinggi, saya menerapkan tiga penanganan: batas 50 pesan per jam untuk seluruh akun, jawaban puzzle diubah dari gambar papan menjadi teks agar ukuran kiriman jauh lebih kecil, dan jeda sambung-ulang bertingkat ketika koneksi terputus. Bot juga berhenti sendiri pada jam tenang, pukul satu sampai lima pagi.
+
+<br>
+
 ## 📝 PGN to Article
 
-```
-$ pgn-to-article partai.pgn --lang id -o artikel.md
-
-  [1/4] Parsed 153 half-moves
-  [2/4] Running engine analysis...
-  [3/4] Prompt built — 2,121 characters
-  [4/4] Asking ollama...
-        done — 1,708 characters written
-```
+<a href="https://github.com/raymclung/PGN-to-article">
+  <img src="img/article.jpg" alt="Menjalankan pgn-to-article di terminal" width="100%">
+</a>
 
 <sub>[Kode](https://github.com/raymclung/PGN-to-article) &nbsp;·&nbsp; C#, .NET 10, Stockfish</sub>
 
