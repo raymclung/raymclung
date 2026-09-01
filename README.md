@@ -14,15 +14,12 @@
 
 ## 👋 Halo
 
-Saya mahasiswa Computer Science di Binus, Bandung, sekaligus developer paruh waktu.
-
-Hampir semua yang saya bangun berhubungan dengan catur. Bukan karena direncanakan, tapi
-karena dari sanalah tugas-tugas pertama saya datang: bot moderasi grup, pembangkit puzzle,
-penulis artikel. Lama-lama jadi kebiasaan.
-
-Saya cenderung memulai tanpa framework. Bukan karena anti, tapi karena ingin tahu dulu apa
-yang sebenarnya terjadi sebelum menyerahkannya ke pustaka orang lain. Belakangan sedang
-belajar C dan Python.
+Saya mahasiswa Computer Science di Binus, Bandung, sekaligus developer paruh waktu. Hampir
+semua yang saya bangun berhubungan dengan catur, bukan karena direncanakan, tapi karena dari
+sanalah tugas-tugas pertama saya datang: bot moderasi grup, pembangkit puzzle, penulis artikel.
+Saya cenderung memulai tanpa framework, bukan karena anti, tapi karena ingin tahu dulu apa yang
+sebenarnya terjadi sebelum menyerahkannya ke pustaka orang lain. Belakangan sedang belajar C
+dan Python.
 
 <br>
 
