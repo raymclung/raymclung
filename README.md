@@ -2,7 +2,7 @@
 
 # Ray McLung Gunawan
 
-Mahasiswa Computer Science, Binus &nbsp;·&nbsp; developer paruh waktu
+Mahasiswa Computer Science, Binus (lulus 2029) &nbsp;·&nbsp; developer paruh waktu &nbsp;·&nbsp; Bandung
 
 [Situs](https://raymclung.github.io) &nbsp;·&nbsp;
 [LinkedIn](https://www.linkedin.com/in/raymclunggunawan/) &nbsp;·&nbsp;
