@@ -68,7 +68,7 @@ $ python pgn_to_puzzles.py sample12.pgn --depth 10 -o puzzles.json
 
 <sub>[Kode](https://github.com/raymclung/PGN-to-puzzles-Chess) &nbsp;·&nbsp; Python, Stockfish</sub>
 
-Membaca partai catur, mencari langkah yang mengubah posisi seimbang menjadi kalah, lalu menjadikannya puzzle. Program ini mengenali 26 pola taktik, mulai dari yang umum seperti garpu kuda dan pin, sampai enam pola skakmat yang di dunia catur punya nama sendiri. Semuanya saya tulis sendiri tanpa memakai pustaka pihak ketiga.
+Membaca partai catur, mencari langkah yang mengubah posisi seimbang menjadi kalah, lalu menjadikannya puzzle. Program ini mengenali 26 pola taktik yang berbeda, seperti garpu kuda, pin, dan berbagai bentuk skakmat. Seluruh deteksinya saya tulis sendiri tanpa memakai pustaka pihak ketiga.
 
 Bagian yang paling lama saya pikirkan adalah cara menentukan tingkat kesulitan. Awalnya saya pakai panjang solusi, tapi itu keliru: rangkaian panjang berisi langkah gamblang tetap mudah, sementara satu langkah tenang yang brilian tetap sulit.
 
