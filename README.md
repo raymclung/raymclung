@@ -107,8 +107,8 @@ mempertahankan bentuk data lama, sehingga 2.000 baris kode di bawahnya tidak per
 
 <sub>[Coba demonya](https://raymclung.github.io/RubyRa/) &nbsp;·&nbsp; [Kode](https://github.com/raymclung/RubyRa) &nbsp;·&nbsp; JavaScript, CSS</sub>
 
-Prototipe pemesanan penginapan. Tiga belas layar dan 53 fungsi JavaScript, seluruhnya dalam
-satu berkas HTML tanpa dependensi.
+Tugas kuliah. Prototipe pemesanan penginapan — tiga belas layar dan 53 fungsi JavaScript,
+seluruhnya dalam satu berkas HTML tanpa dependensi.
 
 Versi pertamanya berukuran **31,6 MB** karena semua gambar saya tanam sebagai base64 — satu
 barisnya saja 25 MB, dan GitHub menolaknya saat diunggah. Setelah gambarnya dikeluarkan jadi
@@ -125,12 +125,11 @@ berkas terpisah lalu dikompres, tinggal 2,7 MB. Ternyata dari 37 gambar yang ter
 
 <sub>[Coba demonya](https://raymclung.github.io/Pesan-Aja/) &nbsp;·&nbsp; [Kode](https://github.com/raymclung/Pesan-Aja) &nbsp;·&nbsp; JavaScript, PWA</sub>
 
-Prototipe aplikasi pemesanan layanan — salon, spa, laundry, barbershop. Dua puluh halaman
-yang saling terhubung, mobile-first dengan tata letak desktop tersendiri, dan bisa dipasang
-sebagai PWA lewat service worker.
+Tugas kuliah juga. Prototipe pemesanan layanan — salon, spa, laundry, barbershop. Dua puluh
+halaman yang saling terhubung, mobile-first dengan tata letak desktop tersendiri, dan bisa
+dipasang sebagai PWA lewat service worker.
 
-Ini tugas kuliah. Masih ada CSS yang tercecer di beberapa halaman yang belum sempat saya
-rapikan.
+Masih ada CSS yang tercecer di beberapa halaman yang belum sempat saya rapikan.
 
 <br>
 
