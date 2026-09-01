@@ -1,90 +1,58 @@
-<div align="center">
+## Ray McLung
 
-# Halo, saya Ray McLung 👋
+Mahasiswa, sekaligus developer paruh waktu. Hampir semua yang saya bangun berhubungan
+dengan catur — bukan karena direncanakan, tapi karena dari sanalah tugas-tugas pertama
+saya datang.
 
-**Mahasiswa yang sedang belajar, sekaligus developer paruh waktu.**
+Saya cenderung memulai tanpa framework. Bukan karena anti, tapi karena ingin tahu dulu
+apa yang sebenarnya terjadi sebelum menyerahkannya ke pustaka orang lain. Belakangan
+sedang belajar C dan Python.
 
-Saya membangun aplikasi web dan alat bantu — kebanyakan berputar di sekitar catur,
-karena di situlah masalah menariknya berada.
+### Yang sedang dan pernah saya kerjakan
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ray%20McLung%20Gunawan-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/raymclunggunawan/)
-[![Email](https://img.shields.io/badge/Email-raymclung%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:raymclung@gmail.com)
+**[wa-bot-grup-catur](https://github.com/raymclung/wa-bot-grup-catur)** — Bot moderasi
+grup WhatsApp untuk komunitas catur, berjalan sejak Juni 2026.
 
-</div>
+Bagian yang paling banyak mengajari saya justru bukan kodenya, melainkan WhatsApp itu
+sendiri. Bot ini pernah kena blokir 403 karena mengirim terlalu banyak pesan, jadi saya
+tambahkan batas 50 pesan per jam, ubah jawaban puzzle dari gambar papan menjadi teks,
+dan buat jeda sambung-ulang yang makin lama makin panjang. Ada juga mode "capek" dan jam
+tenang pukul 1–5 pagi.
 
----
+Arsitekturnya dipisah: `gateway` (Node.js) hanya mengurus koneksi, `brain` (C# .NET 10)
+memegang seluruh logika. Dengan begitu aturan moderasi bisa diuji tanpa perlu terhubung
+ke WhatsApp sama sekali.
 
-## 🛠️ Yang saya pakai
+**[RubyRa Stays](https://github.com/raymclung/RubyRa)** ·
+[demo](https://raymclung.github.io/RubyRa/) — Prototipe pemesanan penginapan. Tiga belas
+layar dalam satu berkas HTML, tanpa dependensi.
 
-<div align="center">
+Versi pertamanya berukuran 31,6 MB karena semua gambar saya tanam sebagai base64 — satu
+barisnya saja 25 MB, dan GitHub menolaknya saat diunggah. Setelah gambarnya dikeluarkan
+jadi berkas terpisah lalu dikompres, tinggal 2,7 MB.
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+**[PesanAja](https://github.com/raymclung/Pesan-Aja)** ·
+[demo](https://raymclung.github.io/Pesan-Aja/) — Prototipe aplikasi pemesanan layanan
+seperti salon dan laundry. Dua puluh halaman, mobile-first, bisa dipasang sebagai PWA.
+Ini tugas kuliah, dan masih ada CSS yang tercecer di sana-sini yang belum sempat saya
+rapikan.
 
-</div>
+**[PGN to Puzzle](https://github.com/raymclung/PGN-to-puzzles-Chess)** — Alat baris
+perintah yang membaca partai catur, mencari langkah yang mengubah posisi seimbang menjadi
+kalah, lalu menjadikannya puzzle.
 
-Saya terbiasa membangun tanpa framework lebih dulu — HTML, CSS, dan JavaScript murni —
-supaya paham apa yang sebenarnya terjadi sebelum menyerahkannya ke pustaka.
-Sekarang sedang mendalami **C** dan **Python**.
+Bagian yang paling lama saya pikirkan adalah cara menentukan tingkat kesulitan. Awalnya
+saya pakai panjang solusi, tapi itu keliru — rangkaian panjang berisi langkah-langkah
+gamblang tetap mudah, sementara satu langkah tenang yang brilian tetap sulit. Akhirnya
+levelnya ditentukan oleh ayunan evaluasi dan penanda seperti pengorbanan.
 
----
+### Perkakas
 
-## 📌 Proyek pilihan
+JavaScript · HTML · CSS · Python · C# · C · Git
 
-### 🏨 [RubyRa Stays](https://github.com/raymclung/RubyRa) &nbsp;·&nbsp; [Demo →](https://raymclung.github.io/RubyRa/)
+### Kontak
 
-Prototipe antarmuka pemesanan penginapan. **13 layar dan 53 fungsi JavaScript dalam satu
-berkas**, tanpa framework maupun dependensi.
+[LinkedIn](https://www.linkedin.com/in/raymclunggunawan/) ·
+[raymclung@gmail.com](mailto:raymclung@gmail.com)
 
-Gambar-gambarnya semula ditanam sebagai base64 di dalam HTML sehingga berkasnya membengkak
-jadi **31,6 MB** — satu barisnya saja 25 MB. Setelah diekstrak dan dikompres, ukurannya
-turun menjadi **2,7 MB**; berkas HTML-nya sendiri menyusut 325 kali lipat.
-
-`JavaScript` `CSS` `SPA`
-
----
-
-### 📅 [PesanAja](https://github.com/raymclung/Pesan-Aja) &nbsp;·&nbsp; [Demo →](https://raymclung.github.io/Pesan-Aja/)
-
-Prototipe aplikasi pemesanan layanan — salon, spa, laundry, barbershop. **20 halaman**
-yang saling terhubung, mencakup seluruh alur dari pencarian sampai ulasan.
-
-Dibangun mobile-first, dilengkapi service worker sehingga dapat dipasang sebagai PWA,
-dengan sistem token desain berbasis CSS custom properties.
-
-`JavaScript` `PWA` `Mobile-first`
-
----
-
-### ♟️ [PGN to Puzzle](https://github.com/raymclung/PGN-to-puzzles-Chess)
-
-Alat baris perintah yang mengubah berkas PGN menjadi puzzle taktis, memakai Stockfish
-untuk menemukan blunder lewat ayunan evaluasi.
-
-Mendeteksi **21 tema taktis** — termasuk pola mat bernama seperti *smothered* dan
-*Anastasia* — semuanya ditulis dari nol tanpa pustaka tambahan. Tingkat kesulitannya
-dikalibrasi ke distribusi kurva lonceng.
-
-`Python` `Stockfish` `CLI`
-
----
-
-## 💬 Sedang saya pelajari
-
-- **C** — pointer, manajemen memori, dan struktur data
-- **Python** — di luar skrip: pengolahan data dan alat baris perintah
-- **Arsitektur backend** — bagaimana menyusun sistem yang tidak berantakan saat membesar
-
----
-
-<div align="center">
-
-Terbuka untuk kesempatan magang dan proyek lepas.
-
-<sub>Silakan sapa lewat <a href="https://www.linkedin.com/in/raymclunggunawan/">LinkedIn</a> atau <a href="mailto:raymclung@gmail.com">email</a>.</sub>
-
-</div>
+Terbuka untuk magang dan proyek lepas.
