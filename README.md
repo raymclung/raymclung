@@ -73,18 +73,6 @@ dikalibrasi ke distribusi kurva lonceng.
 
 ---
 
-## 📊 Statistik
-
-<div align="center">
-
-![Statistik GitHub](https://github-readme-stats.vercel.app/api?username=raymclung&show_icons=true&hide_border=true&title_color=1F4FD9&icon_color=15B79E&theme=default)
-
-![Bahasa teratas](https://github-readme-stats.vercel.app/api/top-langs/?username=raymclung&layout=compact&hide_border=true&title_color=1F4FD9)
-
-</div>
-
----
-
 ## 💬 Sedang saya pelajari
 
 - **C** — pointer, manajemen memori, dan struktur data
