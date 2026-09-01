@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains%20Mono&weight=600&size=20&duration=3000&pause=1000&color=E8B84B&center=true&vCenter=true&width=504&height=45&lines=Mahasiswa%20CS%20di%20Binus%2C%20Bandung.%3BBot%20WhatsApp%3A%2016.211%20baris%20C%23.%3BPGN%20masuk%2C%20puzzle%20dan%20artikel%20keluar.%3B26%20tema%20taktis%2C%20ditulis%20dari%20nol." alt="Mahasiswa CS di Binus, Bandung">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains%20Mono&weight=600&size=20&duration=3000&pause=1000&color=E8B84B&center=true&vCenter=true&width=564&height=45&lines=Halo%2C%20saya%20Ray.%3BMahasiswa%20Computer%20Science%20di%20Binus.%3BDeveloper%20paruh%20waktu%2C%20tinggal%20di%20Bandung.%3BSedang%20mendalami%20C%20dan%20Python." alt="Halo, saya Ray. Mahasiswa Computer Science di Binus.">
 
 <a href="https://raymclung.github.io"><img src="img/btn-situs.png" alt="Situs Portofolio" width="184"></a>
 <a href="https://www.linkedin.com/in/raymclunggunawan/"><img src="img/btn-linkedin.png" alt="LinkedIn" width="184"></a>
