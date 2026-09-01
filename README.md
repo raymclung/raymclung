@@ -52,10 +52,12 @@ WhatsApp ⇄ gateway (Node.js) ──POST /incoming──▶ brain (C# .NET 10)
 Gateway hanya mengurus koneksi; seluruh logika moderasi ada di brain. Dengan begitu aturannya
 bisa diuji tanpa perlu terhubung ke WhatsApp sama sekali.
 
-Yang paling banyak mengajari saya justru bukan kodenya, melainkan WhatsApp itu sendiri. Bot
-ini pernah kena blokir 403 karena mengirim terlalu banyak pesan, jadi saya tambahkan batas 50
-pesan per jam, ubah jawaban puzzle dari gambar papan menjadi teks, dan buat jeda sambung-ulang
-yang makin lama makin panjang. Ada juga mode "capek" dan jam tenang pukul 1–5 pagi.
+Tantangan terbesarnya bukan pada logika moderasi, melainkan pada batasan WhatsApp itu
+sendiri. Setelah bot terkena pembatasan 403 akibat volume pesan yang terlalu tinggi,
+saya menerapkan tiga penanganan: batas 50 pesan per jam untuk seluruh akun, jawaban
+puzzle diubah dari gambar papan menjadi teks agar ukuran kiriman jauh lebih kecil, dan
+jeda sambung-ulang bertingkat ketika koneksi terputus. Bot juga berhenti sendiri pada
+jam tenang, pukul satu sampai lima pagi.
 
 <br>
 
