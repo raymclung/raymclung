@@ -32,6 +32,22 @@ Saya mahasiswa Computer Science di Binus, Bandung, sekaligus developer paruh wak
 
 ## 📌 Yang saya kerjakan
 
+## 🗄️ Chess GM Database
+
+<a href="https://github.com/raymclung/catur">
+  <img src="img/catur.jpg" alt="Halaman partai Chess GM Database: Carlsen vs Anand di titik balik 28...Nd4?, dengan akurasi Stockfish dan grafik evaluasi" width="100%">
+</a>
+
+<sub>[Kode](https://github.com/raymclung/catur) &nbsp;·&nbsp; Python, FastAPI, SQLite, Stockfish</sub>
+
+Database partai grandmaster untuk belajar catur. Isinya sekarang 266.841 partai dari arsip TWIC, broadcast Lichess, dan PGN Mentor, dengan 9,4 juta posisi terindeks; 75.278 di antaranya sudah dianalisis Stockfish langkah demi langkah. Dari posisi mana pun saya bisa melihat apa yang dimainkan GM beserta skornya, lalu berlatih dari partai yang saya kalahkan sendiri.
+
+Tantangan terbesarnya justru laptop saya. Satu partai butuh sekitar 49 detik analisis, jadi Stockfish dijalankan sebagai batch terpisah dengan batas RAM dan slot. Supaya lebih cepat, tablet dan HP di WiFi yang sama bisa ikut menghitung lewat Stockfish di browser. Sebelum hasilnya dipercaya, saya bandingkan dulu dengan engine laptop pada 12 partai: selisih akurasinya median 0,65 poin.
+
+Aturan integritas data ditegakkan di skema database, bukan sekadar dijanjikan kode, dan setiap aturan punya tes. Totalnya 404 tes.
+
+<br>
+
 ## ♟️ PGN to Puzzle
 
 <a href="https://github.com/raymclung/PGN-to-puzzles-Chess">
