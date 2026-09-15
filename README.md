@@ -35,7 +35,7 @@ Saya mahasiswa Computer Science di Binus, Bandung, sekaligus developer paruh wak
 ## 🗄️ Chess GM Database
 
 <a href="https://github.com/raymclung/catur">
-  <img src="img/catur.jpg" alt="Halaman partai Chess GM Database: Carlsen vs Anand di titik balik 28...Nd4?, dengan akurasi Stockfish dan grafik evaluasi" width="100%">
+  <img src="img/catur.gif" alt="Demo Chess GM Database: daftar partai, penjelajah pembukaan, dan partai Carlsen vs Anand dengan analisis Stockfish" width="100%">
 </a>
 
 <sub>[Kode](https://github.com/raymclung/catur) &nbsp;·&nbsp; Python, FastAPI, SQLite, Stockfish</sub>
